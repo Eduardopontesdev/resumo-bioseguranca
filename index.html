@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biossegurança - Estudo Avançado para Faculdade</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <h1><i class="fa fa-shield"></i> Biossegurança Avançada</h1>
+            <p>Resumo completo para provas de faculdade + Quiz interativo de fixação</p>
+            <div class="painel-pontuacao">
+                <div class="caixa-pontuacao">
+                    <span>Pontuação: </span>
+                    <span id="pontuacao">0</span>/30
+                </div>
+                <button id="botao-reiniciar">
+                    <i class="fa fa-refresh"></i> Reiniciar Quiz
+                </button>
+            </div>
+        </header>
+
+        <!-- Seção de Resumo Expandido -->
+        <section class="resumo">
+            <h2><i class="fa fa-graduation-cap"></i> Resumão de Biossegurança - Nível Faculdade</h2>
+            
+            <h3><i class="fa fa-bullseye"></i> 📌 Fundamentos e Objetivos</h3>
+            <ul>
+                <li>Conjunto de ações destinadas a prevenir, controlar, reduzir ou eliminar riscos inerentes às atividades que possam comprometer a saúde humana, animal, vegetal e a qualidade dos processos e do meio ambiente.</li>
+                <li><strong>Objetivos principais:</strong> Proteger a saúde do trabalhador, da população e do ecossistema; Prevenir acidentes e doenças ocupacionais; Garantir segurança no manuseio de agentes biológicos, químicos, físicos e radioativos; Estabelecer normas e procedimentos seguros para atividades laboratoriais, hospitalares e industriais.</li>
+            </ul>
+
+            <h3><i class="fa fa-gavel"></i> ⚖️ Marco Legal: Lei nº 11.105/2005 (Lei de Biossegurança)</h3>
+            <ul>
+                <li>Regulamenta os artigos 218 e 225 da Constituição Federal, estabelecendo normas de segurança e mecanismos de fiscalização sobre a construção, o cultivo, a produção, a manipulação, o transporte, a transferência, a importação, a exportação, o armazenamento, a pesquisa, a comercialização, o consumo, a liberação no meio ambiente e o descarte de organismos geneticamente modificados (OGMs) e seus derivados.</li>
+                <li>Fundamenta-se nos princípios da precaução e da responsabilidade objetiva.</li>
+                <li>Cria mecanismos de controle como a Comissão Técnica Nacional de Biossegurança (CTNBio) e o Conselho Nacional de Biossegurança (CNBS).</li>
+                <li>Estabelece regras rigorosas para a liberação comercial e para a pesquisa com células-tronco embrionárias.</li>
+            </ul>
+
+            <h3><i class="fa fa-users"></i> 🧑‍⚖️ CNBS - Conselho Nacional de Biossegurança</h3>
+            <ul>
+                <li>Órgão colegiado de natureza consultiva e deliberativa do Presidente da República, responsável por formular e implementar a <strong>Política Nacional de Biossegurança (PNB)</strong>.</li>
+                <li>Avalia os impactos socioeconômicos e as questões estratégicas relacionadas aos OGMs, podendo deliberar sobre a liberação comercial.</li>
+                <li>Composto por chefes de diversos ministérios (Casa Civil, Agricultura, Meio Ambiente, Saúde, Ciência e Tecnologia, etc.).</li>
+            </ul>
+
+            <h3><i class="fa fa-flask"></i> 🔬 CTNBio - Comissão Técnica Nacional de Biossegurança</h3>
+            <ul>
+                <li>Instância colegiada multidisciplinar vinculada ao Ministério da Ciência, Tecnologia e Inovações (MCTI).</li>
+                <li>Principal órgão técnico-consultivo e deliberativo sobre OGMs. Suas decisões são vinculantes em âmbito nacional.</li>
+                <li><strong>Principais funções:</strong> Classificar OGMs quanto ao nível de risco; Emitir pareceres técnicos sobre segurança; Estabelecer normas para as atividades com OGMs; Autorizar ou proibir atividades de pesquisa e liberação comercial.</li>
+            </ul>
+
+            <h3><i class="fa fa-file-text-o"></i> 📋 NR 32 - Segurança e Saúde no Trabalho em Serviços de Saúde</h3>
+            <ul>
+                <li>Norma Regulamentadora emitida pelo extinto Ministério do Trabalho e Emprego (hoje sob a alçada do MTP).</li>
+                <li><strong>Objetivo:</strong> Estabelecer diretrizes básicas para a proteção da segurança e saúde dos trabalhadores dos serviços de saúde, bem como daqueles que exercem atividades de promoção e assistência à saúde em geral.</li>
+                <li>Aborda a gestão de riscos biológicos, químicos, físicos e ergonômicos, além da implementação do Programa de Controle Médico de Saúde Ocupacional (PCMSO) e do Programa de Prevenção de Riscos Ambientais (PPRA) específicos.</li>
+                <li>Define medidas rigorosas para limpeza, desinfecção, esterilização, uso de EPIs (luvas, máscaras, óculos, jalecos) e descarte de resíduos.</li>
+            </ul>
+
+            <h3><i class="fa fa-bug"></i> 🦠 Agentes Biológicos: Classificação de Risco (Classe 1 a 4)</h3>
+            <ul>
+                <li>Definida pela CTNBio e baseada na patogenicidade, virulência, modo de transmissão, endemicidade e disponibilidade de medidas profiláticas e terapêuticas.</li>
+                <li><strong>Classe 1 (Risco Baixo / 🟢):</strong> Baixa probabilidade de causar doença em humanos ou animais. Ex: Lactobacillus casei, Saccharomyces cerevisiae, Escherichia coli K-12.</li>
+                <li><strong>Classe 2 (Risco Moderado / 🟡):</strong> Causa doença humana ou animal, mas com tratamento e profilaxia eficazes. Risco limitado. Ex: Staphylococcus aureus, Salmonella Typhi, Vírus da Dengue.</li>
+                <li><strong>Classe 3 (Risco Alto / 🟠):</strong> Causa doença grave ou potencialmente letal. Pode se espalhar, mas há medidas de controle. Ex: Mycobacterium tuberculosis, Bacillus anthracis, Vírus da Raiva.</li>
+                <li><strong>Classe 4 (Risco Máximo / 🔴):</strong> Causa doença grave e letal com alta capacidade de disseminação. Não há profilaxia ou tratamento eficaz. Ex: Vírus Ebola, Vírus Marburg, Arenavírus.</li>
+            </ul>
+
+            <h3><i class="fa fa-trash-o"></i> 🗑️ Gerenciamento de Resíduos de Serviços de Saúde (RSS) - RDC ANVISA 222/2018</h3>
+            <h4>Grupos de Classificação dos Resíduos (Grupos A, B, C, D, E)</h4>
+            <ul>
+                <li><strong>🩸 Grupo A (Infectantes):</strong> Resíduos com agentes biológicos que, por suas características, podem apresentar risco de infecção. Ex: bolsas de sangue, culturas de laboratório, vacinas de vírus vivo, luvas com sangue, tecidos e órgãos.</li>
+                <li><strong>🧪 Grupo B (Químicos):</strong> Substâncias químicas que oferecem risco à saúde ou ao meio ambiente por serem inflamáveis, corrosivas, reativas, tóxicas ou mutagênicas. Ex: medicamentos vencidos, reveladores de raio-X, mercúrio.</li>
+                <li><strong>☢️ Grupo C (Rejeitos Radioativos):</strong> Materiais contaminados com radionuclídeos em quantidades acima dos limites de isenção. Ex: resíduos de medicina nuclear, fontes radioativas seladas.</li>
+                <li><strong>🗑️ Grupo D (Resíduos Comuns):</strong> Similar ao lixo domiciliar, sem risco biológico, químico ou radiológico. Ex: papel de escritório, restos de comida, gesso limpo.</li>
+                <li><strong>🪡 Grupo E (Perfurocortantes):</strong> Objetos e instrumentos com capacidade de cortar ou furar. Ex: agulhas, lâminas de bisturi, ampolas de vidro, lancetas. O descarte deve ser em recipientes rígidos, resistentes à punctura, com identificação.</li>
+            </ul>
+
+            <h4>Detalhamento dos Subgrupos do Grupo A (Infectantes)</h4>
+            <ul>
+                <li><strong>A1 (Alta patogenicidade):</strong> Culturas e estoques de microrganismos, vacinas de vírus vivo vencidas, bolsas de sangue. Exigem tratamento prévio (autoclave, incineração).</li>
+                <li><strong>A2 (Carcaças e tecidos animais):</strong> Carcaças, vísceras e corpos de animais contaminados ou suspeitos, oriundos de experimentação científica.</li>
+                <li><strong>A3 (Peças anatômicas humanas):</strong> Membros amputados, órgãos retirados em cirurgias, fetos (<500g ou <25cm). Destino: sepultamento, cremação ou incineração.</li>
+                <li><strong>A4 (Assistência geral):</strong> Sobras de amostras de laboratório (fezes, urina), kits de diálise, materiais com secreções sem suspeita de epidemias graves.</li>
+                <li><strong>A5 (Príons):</strong> Materiais com suspeita ou confirmação de contaminação por príons (proteínas infecciosas, ex: Doença de Creutzfeldt-Jakob). Exigem embalagem em <strong>DOIS sacos vermelhos sobrepostos</strong> e tratamento específico (autoclave com protocolo especial).</li>
+            </ul>
+            <p><strong>⚠️ Atenção:</strong> Resíduos dos subgrupos A2 e A3 geram putrefação rápida, exigindo destino final sanitário e ético (sepultamento, cremação).</p>
+
+            <h3><i class="fa fa-paint-bucket"></i> 🎨 Mapa de Riscos: Cores e Significados (NR-5)</h3>
+            <ul>
+                <li><strong style="color: #e74c3c;">🔴 Vermelho:</strong> Risco Biológico</li>
+                <li><strong style="color: #f39c12;">🟡 Amarelo:</strong> Risco Químico</li>
+                <li><strong style="color: #2ecc71;">🟢 Verde:</strong> Risco Físico</li>
+                <li><strong style="color: #3498db;">🔵 Azul:</strong> Risco Ergonômico</li>
+                <li><strong style="color: #e67e22;">🟠 Laranja:</strong> Risco de Acidentes</li>
+            </ul>
+
+            <h3><i class="fa fa-hand-paper-o"></i> ⚗️ Boas Práticas e Manipulação Segura</h3>
+            <ul>
+                <li>Uso obrigatório de EPIs compatíveis com o risco (luvas, jaleco manga longa, óculos, protetor facial, máscara N95/PFF2 para aerossóis).</li>
+                <li>Manipulação de agentes biológicos classe 2 ou 3 em Cabines de Segurança Biológica (CSB) classe II.</li>
+                <li>Proibição de pipetar com a boca, comer, beber, fumar ou aplicar cosméticos nas áreas de trabalho.</li>
+                <li>Desinfecção de superfícies com hipoclorito ou álcool 70% antes e após procedimentos.</li>
+                <li>Segregação e acondicionamento corretos dos resíduos gerados.</li>
+            </ul>
+
+            <h3><i class="fa fa-ambulance"></i> 🚑 Noções de Primeiros Socorros em Ambiente Laboratorial/Hospitalar</h3>
+            <h4>🫁 Obstrução de Vias Aéreas por Corpo Estranho (Engasgo)</h4>
+            <ul>
+                <li>Sinal universal: levar as mãos ao pescoço.</li>
+                <li>Conduta consciente: Manobra de Heimlich (compressões abdominais).</li>
+                <li>Inconsciente: iniciar RCP e verificar cavidade oral.</li>
+            </ul>
+            <h4>⚡ Crises Convulsivas (Epilépticas)</h4>
+            <ul>
+                <li>Proteger a cabeça com algo macio, afastar objetos perigosos.</li>
+                <li>Colocar a vítima em posição lateral de segurança após a crise.</li>
+                <li><strong>NUNCA</strong> introduzir objetos ou dedos na boca.</li>
+            </ul>
+            <h4>🫨 Síncope (Desmaio)</h4>
+            <ul>
+                <li>Deitar a pessoa em local ventilado, elevar as pernas ~30 cm (posição de Trendelenburg).</li>
+                <li>Afrouxar roupas apertadas e manter a calma até o atendimento.</li>
+            </ul>
+
+            <h3><i class="fa fa-fire-extinguisher"></i> 🔥 Combate a Incêndio: Classes e Métodos</h3>
+            <ul>
+                <li><strong>Classe A (materiais sólidos):</strong> Usar água ou espuma (resfriamento e abafamento).</li>
+                <li><strong>Classe B (líquidos inflamáveis):</strong> Usar espuma, CO₂ ou pó químico (abafamento).</li>
+                <li><strong>Classe C (equipamentos elétricos):</strong> Usar CO₂ ou pó químico (NÃO usar água ou espuma).</li>
+                <li><strong>Classe D (metais pirofóricos):</strong> Usar pó especial.</li>
+                <li><strong>Métodos de extinção:</strong> Resfriamento (remove calor), Abafamento (remove oxigênio), Remoção do combustível, Inibição química (interrompe reação em cadeia).</li>
+            </ul>
+        </section>
+
+        <!-- Container do Quiz -->
+        <main id="container-perguntas"></main>
+
+        <!-- Rodapé -->
+        <footer class="rodape">
+            <p><i class="fa fa-graduation-cap"></i> Material de estudo para prova de faculdade - Biossegurança, Resíduos e NR-32</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
